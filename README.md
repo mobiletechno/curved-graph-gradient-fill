@@ -20,20 +20,60 @@ TODO: List what your package can do. Maybe include images, gifs, or videos.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use this package, add it to your pubspec.yaml:
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
+TODO: A Flutter package for drawing smooth, curved, gradient-filled graphs using CustomPainter.
+
+Features
+✅ Customizable graph width, height, stroke width
+✅ Gradient background support
+✅ Supports both X and Y-axis values
+✅ Customizable graph line color
+✅ Lightweight and easy to integrate
+
 to `/example` folder.
 
 ```dart
+
 const like = 'sample';
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Getting Started
+
+import 'package:flutter/material.dart';
+import 'package:graph_curved_gradient_fill/graph_curved_gradient_fill.dart';
+
+void main() {
+runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+@override
+Widget build(BuildContext context) {
+return MaterialApp(
+home: Scaffold(
+appBar: AppBar(title: Text("Graph Chart Example")),
+body: Center(
+child: GraphChart(
+width: 300,
+height: 200,
+stroke: 2.0,
+yValues: [{'Jan': 10}, {'Feb': 20}, {'Mar': 15}],
+xValues: [{'2023': 5}, {'2024': 10}, {'2025': 7}],
+backgroundChartGradientOne: Colors.blue,
+backgroundChartGradientTwo: Colors.white,
+graphGradientOne: Colors.green,
+graphGradientTwo: Colors.white,
+colorGraphLine: Colors.red,
+),
+),
+),
+);
+}
+}
+Additional Information
+This package utilizes Flutter’s CustomPainter to render smooth, gradient-filled graphs dynamically.
