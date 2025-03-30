@@ -1,7 +1,9 @@
 name: graph_curved_gradient_fill
-description: "A new Flutter package project."
+description: "This Package is useful for create chart graph with additions custom gradient colors"
+repository: https://github.com/mobiletechno/curved-graph-gradient-fill
+issue_tracker: https://github.com/mobiletechno/curved-graph-gradient-fill/issues
 version: 0.0.1
-homepage:
+homepage: https://github.com/mobiletechno/curved-graph-gradient-fill
 
 environment:
   sdk: ^3.6.0

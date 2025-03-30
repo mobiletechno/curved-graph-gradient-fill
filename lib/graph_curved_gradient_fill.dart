@@ -7,7 +7,6 @@ class CurvedChartPainter extends CustomPainter {
   final List<Map<String, double>> xValues;
   final List<Map<String, double>> yValues;
   final Color? color;
-  final Color? textColor;
   final double strokeWidth;
   final List<Color> gradientColors;
   final List<double> gradientStops;
@@ -19,7 +18,6 @@ class CurvedChartPainter extends CustomPainter {
     required this.yValues,
     required this.strokeWidth,
     this.color,
-    this.textColor,
     this.gradientColors = const [
       Color(0x00F63E02),
       Color(0xFFFFFFFF),
